@@ -1,0 +1,55 @@
+.mis-productos-page {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background: var(--background);
+}
+
+.productos-title {
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    color: var(--primary-orange);
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.productos-subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem 0;
+    color: var(--primary-orange);
+}
+
+.productos-subtitle.inactivos {
+    margin-top: 5rem;
+}
+
+
+.productos-list {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productos-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.empty-state {
+    text-align: left;
+    padding-left: 0;
+    color: var(--muted-foreground);
+    font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+    .mis-productos-page {
+        padding: 1rem 0.75rem;
+    }
+    .productos-title {
+        font-size: 2rem;
+    }
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+}

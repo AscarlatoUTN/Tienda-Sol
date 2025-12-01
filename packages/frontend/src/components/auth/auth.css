@@ -1,0 +1,46 @@
+.auth-dialog-icon {
+    font-size: 32px !important;
+}
+
+.dialog-paper {
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    min-width: 360px;
+    background: var(--card);
+    color: var(--foreground);
+    padding: 16px;
+}
+
+.dialog-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.dialog-content {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.dialog-body {
+    font-weight: 500;
+}
+
+.dialog-caption {
+    color: var(--destructive);
+    font-weight: 600;
+}
+
+.dialog-actions {
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.dialog-btn {
+    font-weight: 600;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 16px;
+}

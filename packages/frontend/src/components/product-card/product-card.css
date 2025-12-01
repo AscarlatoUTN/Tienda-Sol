@@ -1,0 +1,117 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--card);
+    border: 1px solid rgba(255, 154, 86, 0.15);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.sales-count {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+}
+
+.product-title {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+.product-description {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    margin-bottom: 1.0rem;
+}
+
+.categories-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+}
+
+.categories-list {
+    color: var(--muted-foreground);
+    font-weight: 400;
+}
+
+.seller-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+}
+
+.seller-name {
+    color: var(--muted-foreground);
+    font-weight: 400;
+}
+
+.stock-count {
+    font-size: 1.0rem;
+    color: var(--primary-orange);
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+}
+
+.stock-count::before {
+    content: "";
+    display: block;
+    height: 1.0rem;
+}
+
+.product-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.product-price .price {
+    font-size: 1.75rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-orange), var(--primary-orange-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.add-button {
+    width: auto;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-card-footer > .add-button {
+    margin-left: auto;
+}
+
+.product-card .add-button {
+    background: linear-gradient(135deg, var(--primary-orange), var(--primary-orange-light));
+    color: white;
+    border: none;
+    padding: 1.0rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-card .add-button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, var(--primary-orange-light), var(--primary-orange));
+}
+
+.quantity-controls-container{
+    margin-left: auto;
+}

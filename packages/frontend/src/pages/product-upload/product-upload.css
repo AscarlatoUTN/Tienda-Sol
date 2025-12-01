@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans:wght@400&family=Inter:wght@400;700&display=swap");
+
+:root {
+    --naranja: #ff9933;
+    --naranja-claro: #ffd4a3;
+    --naranja-hover: #ffb366;
+    --texto-input: #7d7575;
+    --card-bg: #ffe6ce;
+    --card-borde: #ffcc98;
+    --panel-bg: rgba(255, 191, 118, 0.55);
+    --panel-borde: rgba(253, 188, 142, 0.81);
+    --input-izq: #ffb783;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product-upload-container {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.product-upload-background {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/imagen%20de%20un%20d%C3%ADa%20sol-nJGthmJ3SM0WvmCw0Sv07oERGLlK6O.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+}
+
+.product-upload-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+}
+
+.product-upload-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.product-upload-wrapper {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-borde);
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    padding-bottom: 40px;
+}
+
+.product-upload-title {
+    position: relative;
+    width: 100%;
+    font-family: "Hedvig Letters Sans", Inter, sans-serif;
+    font-size: clamp(2rem, 7vw, 4rem);
+    line-height: 1.1;
+    font-weight: 400;
+    color: #dd5c00;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    margin: 0 auto 1.5rem auto;
+    padding: 1.2rem 0 0.5rem 0;
+    z-index: 2;
+    letter-spacing: 2px;
+}
+
+.product-upload-card {
+    position: relative;
+    width: calc(100% - 170px);
+    background: var(--card-bg);
+    border: 4px solid var(--card-borde);
+    border-radius: 6px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+    padding: 100px 20px 30px 20px;
+    margin: 85px auto 0;
+}
+
+.product-upload-icon-circle {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    left: 50%;
+    top: -85px;
+    transform: translateX(-50%);
+    background: #ff8800;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(255, 153, 51, 0.45);
+    z-index: 3;
+}
+
+.product-upload-icon {
+    color: #fff;
+    font-size: 82px !important;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .product-upload-background {
+        padding: 20px 12px;
+    }
+
+    .product-upload-wrapper {
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .product-upload-title {
+        font-size: clamp(1.5rem, 6vw, 3rem);
+        padding: 1rem 0 0.5rem 0;
+    }
+
+    .product-upload-card {
+        width: calc(100% - 40px);
+        padding: 100px 15px 25px 15px;
+    }
+
+    .product-upload-icon-circle {
+        width: 140px;
+        height: 140px;
+        top: -70px;
+    }
+
+    .product-upload-icon {
+        font-size: 68px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-upload-card {
+        width: calc(100% - 20px);
+        padding: 90px 12px 20px 12px;
+    }
+
+    .product-upload-icon-circle {
+        width: 120px;
+        height: 120px;
+        top: -60px;
+    }
+
+    .product-upload-icon {
+        font-size: 56px !important;
+    }
+}

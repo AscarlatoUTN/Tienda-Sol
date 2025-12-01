@@ -1,0 +1,121 @@
+
+:root{
+    --orange: #ff8a00;
+    --orange-dark: #e67300;
+    --orange-ghost: rgba(255,138,0,0.08);
+    --text: #222;
+    --card-bg: #ffffff;
+}
+
+
+.cod-content {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: var(--card-bg);
+    color: var(--text);
+}
+
+
+.cod-content .MuiTextField-root {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+
+.cod-content .MuiInputLabel-root {
+    color: rgba(0,0,0,0.65);
+}
+.cod-content .MuiInputLabel-root.Mui-focused {
+    color: var(--orange);
+}
+
+
+.cod-content .MuiOutlinedInput-root {
+    transition: box-shadow .15s ease, border-color .15s ease;
+}
+.cod-content .MuiOutlinedInput-root fieldset {
+    border-color: rgba(0,0,0,0.12);
+}
+.cod-content .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: var(--orange);
+    box-shadow: 0 6px 18px var(--orange-ghost);
+}
+
+
+.cod-content .MuiSelect-outlined .MuiOutlinedInput-notchedOutline,
+.cod-content .MuiOutlinedInput-root .MuiSelect-nativeInput {
+    border-color: rgba(0,0,0,0.12);
+}
+.cod-content .MuiSelect-outlined.Mui-focused .MuiOutlinedInput-notchedOutline,
+.cod-content .MuiOutlinedInput-root.Mui-focused .MuiSelect-outlined .MuiOutlinedInput-notchedOutline {
+    border-color: var(--orange);
+}
+
+
+.cod-content .MuiInputBase-input {
+    color: var(--text);
+}
+
+
+.cod-content .MuiFormHelperText-root {
+    color: var(--orange-dark);
+}
+
+
+.MuiDialogTitle-root {
+    font-weight: 600;
+    color: var(--orange-dark);
+}
+
+.cod-content + .MuiDialogActions-root {
+    padding: 16px;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    background: transparent;
+}
+
+
+.cod-content + .MuiDialogActions-root .MuiButton-contained {
+    background: linear-gradient(180deg, var(--orange) 0%, var(--orange-dark) 100%);
+    color: #ffffff;
+    box-shadow: 0 6px 18px rgba(230,115,0,0.18);
+    border-radius: 8px;
+    padding: 8px 14px;
+}
+.cod-content + .MuiDialogActions-root .MuiButton-contained:hover {
+    filter: brightness(0.96);
+}
+
+
+.cod-content + .MuiDialogActions-root .MuiButton-text {
+    color: var(--orange-dark);
+    text-transform: none;
+}
+
+
+.cod-content + .MuiDialogActions-root .MuiCircularProgress-root {
+    color: #fff !important;
+}
+
+
+.cod-content + .MuiDialogActions-root .MuiButton-contained.Mui-disabled {
+    opacity: 0.7;
+    background: linear-gradient(180deg, #ffd8b3 0%, #ffc48a 100%);
+    box-shadow: none;
+}
+
+
+@media (max-width: 600px) {
+    .cod-content + .MuiDialogActions-root {
+        padding: 12px;
+        gap: 8px;
+    }
+    .cod-content + .MuiDialogActions-root .MuiButton-contained {
+        width: 100%;
+    }
+    .cod-content + .MuiDialogActions-root .MuiButton-text {
+        width: 100%;
+        justify-content: center;
+    }
+}

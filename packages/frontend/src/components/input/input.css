@@ -1,0 +1,46 @@
+.ui-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.6rem;
+    border: 1px solid var(--border);
+    background-color: var(--card);
+    border-radius: 0.5rem;
+    transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.ui-input-wrapper:focus-within {
+    border-color: var(--accent, #6b7280);
+    box-shadow: 0 0 0 4px rgba(0,0,0,0.03);
+}
+
+.ui-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--foreground);
+    font-size: 0.95rem;
+    padding: 0.25rem 0;
+}
+
+.ui-input::placeholder {
+    color: var(--muted-foreground);
+    opacity: 1;
+}
+
+.ui-input-clear {
+    background: transparent;
+    border: none;
+    color: var(--muted-foreground);
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.15rem;
+    border-radius: 0.25rem;
+}
+
+.ui-input-clear:hover {
+    color: var(--foreground);
+    background: rgba(0,0,0,0.03);
+}

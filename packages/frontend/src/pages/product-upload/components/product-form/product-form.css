@@ -1,0 +1,31 @@
+.product-upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+.product-upload-button {
+    width: 100%;
+    height: 56px;
+    background: #f6af5c;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 56px;
+    font-family: Inter, sans-serif;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.2s ease, transform 0.2s ease;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.product-upload-button:hover {
+    filter: brightness(1.03);
+    transform: translateY(-1px);
+}
+.product-upload-button:active {
+    transform: none;
+}

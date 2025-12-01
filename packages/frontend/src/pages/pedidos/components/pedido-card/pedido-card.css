@@ -1,0 +1,155 @@
+.order-card {
+    background: var(--card) !important;
+    color: var(--foreground) !important;
+    border: 1px solid rgba(255, 154, 86, 0.15) !important;
+    border-radius: 1rem !important;
+    transition: all 0.3s ease !important;
+    overflow: hidden !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-card:hover {
+    border-color: rgba(255, 154, 86, 0.3);
+    box-shadow: 0 8px 24px var(--orange-shadow);
+    transform: translateY(-4px);
+}
+
+.order-card-header{
+    padding: 1.0rem 1rem 0.5rem 1rem !important;
+}
+
+.order-header-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.order-estado-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.order-estado-cambiar-btn {
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.order-title {
+    font-weight: 600 !important;
+    color: var(--primary-orange) !important;
+}
+
+.order-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    padding-top: 0 !important;
+}
+
+.order-vendedor,
+.order-entrega {
+    display: flex;
+    min-height: 40px;
+}
+
+.order-vendedor-label,
+.order-entrega-label {
+    min-width: 170px;
+}
+
+.order-vendedor-nombre,
+.order-entrega-direccion {
+    word-break: break-word;
+}
+
+.order-historial-wrapper {
+    margin-top: 0.5rem;
+}
+
+.order-historial-list {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.order-historial-item {
+    margin-bottom: 0.5rem;
+}
+
+.order-historial-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-historial-fecha {
+    color: #888;
+    font-weight: 600;
+}
+
+.order-historial-detalle {
+    color: #888;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-historial-usuario,
+.order-historial-motivo{
+    margin-top: 0.5rem;
+}
+
+.order-bottom{
+    margin-top: auto;
+}
+
+.order-divider {
+    margin: 1rem 0 !important;
+    border-color: var(--muted-foreground) !important;
+}
+
+.order-productos {
+    margin-bottom: 1.0rem !important;
+    font-weight: 600 !important;
+}
+
+.order-item-list {
+    min-height: 90px;
+    max-height: 250px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.order-item {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 4px;
+    align-items: center;
+}
+
+.order-product-img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.order-subtotal {
+    margin-left: auto;
+    font-weight: 500;
+    color: var(--primary-orange);
+}
+
+.order-total {
+    font-weight: 500 !important;
+    color: var(--primary-orange) !important;
+    width: 100%;
+    text-align: right;
+}

@@ -1,0 +1,189 @@
+:root {
+    --primary-orange: #ffa700;
+    --primary-orange-light: #ffb347;
+    --orange-shadow: rgba(255, 154, 86, 0.4);
+    --orange-shadow-hover: rgba(255, 154, 86, 0.6);
+}
+
+.buy-button {
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    background: var(--primary-orange);
+}
+
+.cart-drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.cart-drawer-paper {
+    width: 420px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: visible;
+    background: var(--card, #ffffff) !important;
+    color: var(--card-foreground, #000000) !important;
+}
+
+.cart-drawer-paper .add-button {
+    padding: 0.85rem 1rem !important;
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    border-radius: 10px !important;
+    border: none;
+    color: var(#000000, var(--primary-foreground, #000000));
+    background: var(
+            --cta-bg,
+            linear-gradient(135deg, #ffd166 0%, #ffb347 60%, #ff9a56 100%)
+    );
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+}
+
+.cart-drawer-paper .add-button:disabled,
+.cart-drawer-paper .add-button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+    box-shadow: none;
+    background-color: var(--primary-orange) !important;
+    color: var(--primary-foreground, #000000);
+    border-color: transparent !important;
+}
+
+.cart-drawer-paper .add-button:disabled:hover,
+.cart-drawer-paper .add-button:disabled:focus {
+    transform: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.cart-drawer-paper .add-button:hover:not(:disabled),
+.cart-drawer-paper .add-button:focus:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+}
+
+.cart-drawer-paper .cart-footer {
+    margin-top: auto;
+    border-top: 1px solid var(--sidebar-border, rgba(0,0,0,0.06));
+    padding-top: 12px;
+    color: var(--card-foreground, #000000);
+}
+
+.cart-drawer-paper .drawer-item {
+    background: var(rgba(0,0,0,0.03));
+    border: 1px solid var(rgba(0,0,0,0.06));
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    overflow: visible;
+    color: var(--card-foreground, #000000);
+}
+
+.cart-drawer-paper .drawer-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.cart-drawer-paper .icon,
+.cart-drawer-paper button.icon {
+    color: var(--card-foreground, #000000);
+    background: transparent;
+    border: none;
+}
+
+.cart-drawer-scroll {
+    overflow: auto;
+    margin-top: 16px;
+    padding-top: 0.5rem;
+    flex: 1;
+}
+
+.cart-empty-message {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--card-foreground, #000000) !important;
+}
+
+.cart-footer {
+    position: relative;
+    z-index: 1;
+    background-color: var(--card, #ffffff);
+    color: var(--card-foreground, #000000);
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+
+.cart-footer-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.drawer-close-button {
+    color: var(--card-foreground, #000000) !important;
+}
+
+.drawer-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.drawer-item-details {
+    flex: 1;
+    min-width: 0;
+    margin: 0 8px;
+}
+
+.drawer-item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 8px;
+    border-radius: 6px;
+    background-color: var(--muted, #f5f5f5);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
+    display: block;
+}
+
+.drawer-item-price {
+    color: var(--card-foreground, #000000);
+}
+
+.drawer-item-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.drawer-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1.05;
+    display: inline-block;
+    background: var(--primary-orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    letter-spacing: 0;
+    padding-right: 2px;
+    color: var(--card-foreground, #000000);
+}

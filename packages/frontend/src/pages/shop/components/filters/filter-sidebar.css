@@ -1,0 +1,41 @@
+#filters-sidebar .filters-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filters-sidebar .filters-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+#filters-sidebar .section-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+#filters-sidebar .price-text {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+#filters-sidebar .filters-row .small {
+    padding: 6px 8px;
+    font-size: 13px;
+    line-height: 1;
+    min-width: 0;
+    height: auto;
+    border-radius: 4px;
+    display: inline-flex;
+}
+
+
+#filters-sidebar .filters-row .small button,
+#filters-sidebar .filters-row .small[role="button"] {
+    padding: 6px 8px;
+    font-size: 15px;
+}

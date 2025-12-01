@@ -1,0 +1,44 @@
+.item-controls {
+    display: flex;
+    align-items: stretch;
+    border-radius: 50px;
+    min-width: 120px;
+    justify-content: flex-end;
+    padding: 0.45rem 0;
+    box-sizing: border-box;
+}
+
+.item-qty {
+    width: 24px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-controls .MuiIconButton-root {
+    padding: 0 8px;
+    font-size: 1rem;
+    height: 2.25rem;
+    min-width: 2.25rem;
+    box-sizing: border-box;
+}
+
+.icon-decrease {
+    color: red !important;
+}
+
+.icon-increase {
+    color: green !important;
+}
+
+.icon-increase-max {
+    color: var(--add-max) !important;
+}
+
+.icon-remove {
+    color: var(--card-foreground, #000000) !important;
+}

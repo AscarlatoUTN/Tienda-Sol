@@ -1,0 +1,135 @@
+.notif-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+    color: var(--foreground);
+}
+
+.notif-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.notif-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0;
+}
+
+.notif-filtros {
+    display: flex;
+    gap: 8px;
+}
+
+.nf-btn {
+    appearance: none;
+    border: 1px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    padding: 8px 12px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.nf-btn:hover {
+    background: color-mix(in oklab, var(--primary) 12%, var(--background));
+}
+
+.nf-btn.active {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border-color: color-mix(in oklab, var(--primary) 80%, var(--border));
+}
+
+.notif-loading,
+.notif-empty {
+    padding: 24px;
+    text-align: center;
+    color: var(--muted-foreground);
+}
+
+.notif-list {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notif-item {
+    border: 1px solid var(--border);
+    background: var(--card);
+    border-left: 6px solid var(--primary);
+    border-radius: calc(var(--radius) + 6px);
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.notif-item.leida {
+    opacity: 0.9;
+    border-left-color: color-mix(in oklab, var(--border) 80%, var(--foreground));
+}
+
+.notif-main {
+    display: grid;
+    gap: 8px;
+}
+
+.notif-mensaje {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--foreground);
+}
+
+.notif-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--muted-foreground);
+    font-size: 0.85rem;
+}
+
+.badge {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.fecha {
+    opacity: 0.9;
+}
+
+.notif-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nf-action {
+    appearance: none;
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border: none;
+    border-radius: var(--radius);
+    padding: 8px 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: filter 0.15s ease, background 0.15s ease;
+}
+
+.nf-action:hover {
+    filter: brightness(0.95);
+}

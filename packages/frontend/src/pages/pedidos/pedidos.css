@@ -1,0 +1,46 @@
+.orders-page {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background: var(--background);
+}
+
+.orders-title {
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    color: var(--primary-orange);
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.orders-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.orders-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--muted-foreground);
+    font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+    .orders-page {
+        padding: 1rem 0.75rem;
+    }
+    .page-title {
+        font-size: 2rem;
+    }
+    .page-description {
+        font-size: 1rem;
+    }
+    .orders-grid {
+        grid-template-columns: 1fr;
+    }
+}

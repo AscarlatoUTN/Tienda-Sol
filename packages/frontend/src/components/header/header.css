@@ -1,0 +1,193 @@
+.hdr {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    backdrop-filter: blur(4px);
+    background: rgba(255,255,255,0.75);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.hdr-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hdr-brand {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.hdr-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.hdr-title {
+    font-weight: 700;
+    font-size: 20px;
+    background: var(--primary-orange);
+}
+
+.site-title {
+    color: var(--primary-orange);
+    text-decoration: none;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.hdr-search {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hdr-search-input {
+    width: clamp(120px, 30vw, 300px);
+    max-width: 100%;
+    min-width: 100px;
+    box-sizing: border-box; 
+    height: 38px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 0 44px 0 12px;
+    font: 400 13px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    color: #111827;
+    background: #FFFFFF;
+    transition: width 150ms ease;
+}
+
+.hdr-search-input-wrap{
+    position: relative;
+}
+
+.header-back-to-shop {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    width: 100%;
+    margin-right: 7.5rem;
+}
+
+.hdr-cta-button{
+    background: linear-gradient(135deg, #ff9a56, #ffb347);
+    color: var(--background);
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hdr-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hdr-cart {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.hdr-cart-count {
+    color: #4B5563;
+    font-size: 14px;
+}
+
+.hdr-user-wrap {
+    position: relative;
+}
+
+.hdr-user-dropdown {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    min-width: 180px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 8px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+    padding: 6px;
+}
+
+.hdr-user-item {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font: 500 14px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    color: #111827;
+    cursor: pointer;
+}
+
+.app-header {
+    background: linear-gradient(to right, rgba(255, 154, 86, 0.05), rgba(255, 179, 71, 0.05));
+    border-bottom: 1px solid rgba(255, 154, 86, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+}
+
+.header-inner {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand-main {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-controls {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.hdr-search-button {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    height: 32px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    line-height: 1;
+    color: #000 !important;
+}
+
+.hdr-user-item:hover { background: #F3F4F6; }
